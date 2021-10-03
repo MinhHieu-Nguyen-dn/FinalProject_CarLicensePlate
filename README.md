@@ -19,7 +19,7 @@ License plates are in European or Indian format: 1 line, long rectangle, width/h
 **Problem statement:** Identify the car license plate ***(CLP)*** and its alphanumeric characters in an image for different purposes.  
 
 **10 questions for the input data:**
-   - ***Question 1:*** List all filenames of the dataset into files_list.csv.
+   - ***Question 1:*** List all files of the dataset into files_list.csv.
      > files_list.csv
    - ***Question 2:*** From the original images, create a new image with highlighted license plate's characters and save into a folder.
      > Folder: blackhat_morph
@@ -29,14 +29,15 @@ License plates are in European or Indian format: 1 line, long rectangle, width/h
      > Folder: drawn_CLP_cnts
    - ***Question 5:*** Crop the license plate (binary format for tesseracts reading) from the original image and save into a folder.
      > Folder: cropped_CLP
-   - ***Question 6:*** Read the characters from cropped_CLP using Tesseracts-OCR (Optical Character Recognition) and save Filename - LicenseChars into a csv file.
+   - ***Question 6:*** Read the characters from cropped-license-plate images using Tesseracts-OCR (Optical Character Recognition) and save Filename - LicenseChars into a csv file.
      > result_1.csv
    - ***Question 7:*** From result_1.csv, add 1 new column "Letters-Only" to check if the license plate contain letters only or both letters and digits. Save this into a new csv file.
      > result_2.csv
    - ***Question 8:*** Create a new column called "points" with the unit digit of sum of the all digits.
      > result_3.csv
-   - ***Question 9:*** How many "9 points" plates?
-   - ***Question 10:*** User enters a desired point. Randomly give the user 1 license plate with that point. 
+   - ***Question 9:*** Create a new column called "lucky". A license plate is "lucky" if it has progressive numbers in sequence and more than 5 points.
+     > result_4.csv
+   - ***Question 10:*** User enters a desired point. Randomly give the user 1 license plate with that point ("lucky" is preferable). 
     
 ### 3. Solve 10 questions:  
 - Functions:
