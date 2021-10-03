@@ -41,6 +41,6 @@ License plates are in European or Indian format: 1 line, long rectangle, width/h
     
 ### 3. Solve 10 questions:  
 - Functions:
-  > functions.ipynb
+  > functions.py
 - Main program file (code):
   > main_final_project.ipynb
